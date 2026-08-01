@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="title desc">
+  <title id="title">Vikas Kumar Singh profile placeholder</title>
+  <desc id="desc">A stylised wheat and DNA illustration with initials VKS.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c3b2e"/>
+      <stop offset="0.55" stop-color="#176b4f"/>
+      <stop offset="1" stop-color="#d49b2a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="75%" cy="15%" r="70%">
+      <stop offset="0" stop-color="#f8d989" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#f8d989" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="760" rx="42" fill="url(#bg)"/>
+  <rect width="640" height="760" rx="42" fill="url(#glow)"/>
+  <g opacity=".16" fill="none" stroke="#fff" stroke-width="5">
+    <path d="M78 65 C205 145 205 250 80 330 C-45 410 -45 515 80 600"/>
+    <path d="M246 65 C121 145 121 250 246 330 C371 410 371 515 246 600"/>
+    <path d="M110 95h105M87 160h154M87 235h154M110 300h105M110 370h105M87 445h154M87 520h154M110 585h105"/>
+  </g>
+  <g transform="translate(384 160)" fill="none" stroke="#f7e5ab" stroke-width="8" stroke-linecap="round">
+    <path d="M0 420V85"/>
+    <path d="M0 118c-52-18-79-49-91-91M0 160c55-13 88-44 105-84M0 201c-57-9-92-39-111-82M0 246c54-7 91-34 113-77M0 294c-51-2-88-25-114-66M0 341c48 1 84-17 111-55"/>
+    <path d="M0 100c-12-50-2-83 25-101M0 145c23-47 49-69 88-74M0 188c-28-42-58-60-98-59M0 231c34-37 68-50 108-43M0 276c-36-31-73-39-111-25M0 321c37-25 74-28 110-9"/>
+  </g>
+  <g transform="translate(70 610)">
+    <text x="0" y="0" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800" letter-spacing="4">VKS</text>
+    <text x="2" y="54" fill="#f8e5a9" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" letter-spacing="2">PLANT GENOMICS · WHEAT BREEDING</text>
+  </g>
+</svg>

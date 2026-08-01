@@ -1,0 +1,11 @@
+const header=document.querySelector('.site-header');
+const menuButton=document.querySelector('.menu-button');
+const navLinks=document.querySelector('.nav-links');
+window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>20));
+menuButton?.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
+navLinks?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.open-modal').forEach(btn=>btn.addEventListener('click',()=>document.getElementById(btn.dataset.modal)?.showModal()));
+document.querySelectorAll('.modal').forEach(modal=>{modal.querySelector('.modal-close')?.addEventListener('click',()=>modal.close());modal.addEventListener('click',e=>{if(e.target===modal)modal.close();});});
+document.getElementById('year').textContent=new Date().getFullYear();
